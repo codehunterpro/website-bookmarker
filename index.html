@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL-bookmarker</title>
+    <!-- link favicon -->
+    <!-- <link rel="icon" type="png/jpeg" href="favicon.png" /> -->
+    <link
+      rel="icon"
+      href="https://www.google.com/s2/u/0/favicons?domain=css-tricks.com"
+    />
+    <!-- link fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="show-modal">ADD BOOKMARK</h1>
+
+    <!-- bookmark container -->
+    <div class="container" id="bookmark-container">
+      
+    </div>
+
+    <!-- modal -->
+    <div class="modal-container" id="modal-container" hidden>
+      <i class="fa-solid fa-xmark" title="close modal" id="close-modal"></i>
+      <div class="modal-title">
+        <h3>Add bookmark website</h3>
+      </div>
+      <div class="modal" id="modal">
+        <form class="modal-form">
+          <label for="Input your website name" id="form-label-1">
+            input your website name
+          </label>
+          <input
+            type="text"
+            id="website-name"
+            placeholder="input website name"
+          />
+
+          <label for="input your website URL" id="form-label-2"
+            >Input your website URL</label
+          >
+          <input
+            type="text"
+            id="website-url"
+            placeholder="https://example.com"
+          />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="overlay" hidden></div>
+    <!-- link Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
